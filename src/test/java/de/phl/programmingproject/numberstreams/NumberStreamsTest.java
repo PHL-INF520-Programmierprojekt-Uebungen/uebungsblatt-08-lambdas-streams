@@ -14,23 +14,11 @@ import static org.junit.jupiter.api.Assertions.fail;
  */
 public class NumberStreamsTest {
 
-    /*
-
-5. Create a new list of integers with the following values: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.
-6. Use a stream and lambda expression to check whether all values are divisable by 10 and print out the result.
-7. Add an odd number to the second list and repeat task 6.
-8. Create a new list of strings with the following values: "apple", "banana", "cherry", "date", "elderberry".
-9. Use a lambda expression to filter out all strings that start with the letter "c" from the list.
-10. Use a lambda expression to map each string in the list to its length.
-11. Use a stream to print out the resulting list of string lengths.
-
-     */
-
     static String mainMethodContent;
     static String[] lines;
 
     @BeforeAll
-    static void setup() {
+    static void prepare() {
         mainMethodContent = TestUtils.getFileContentForFileInRootOrSrcDirectory("/main/java/de/phl/programmingproject/numberstreams/Main.java");
         lines = mainMethodContent.split("\n");
     }
