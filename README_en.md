@@ -3,7 +3,8 @@
 
 In this exercise sheet, you will learn to use Lambdas and Java Streams APIs to solve various exercises.
 
-## Exercise: Filtering and Mapping with Lambdas and Streams 1
+## Exercise: Filtering and Mapping with Lambdas and Streams 1 (`NumberStreams`)
+
 
 ### Requirements
 
@@ -15,18 +16,24 @@ In this exercise sheet, you will learn to use Lambdas and Java Streams APIs to s
 
 ### Tasks
 
+Implement your solution in the `main` method of the `Main` class in the `de.phl.programmingproject.numberstreams` package.
+
 You have a list of integers, a list of strings, and you want to perform some operations on them using lambdas and streams. Your task is to write a Java program that does the following:
 
 1. Create a list of integers with the following values: 2, 15, 24, 29, 36, 44, 52, 61, 68, 80.
+   * Use the `Arrays.asList(...)` method to create the list.
 2. Use a lambda expression to filter out all even numbers from the list.
 3. Use a lambda expression to map each odd number in the list to its square.
 4. Use a stream to print out the resulting list of odd squares.
 5. Create a new list of integers with the following values: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.
-6. Use a stream and lambda expression to check whether all values are divisable by 10 and print out the result.
+   * Do **not** simply use the `Arrays.asList(...)` method to create the list, as you will need to modify it later.
+     * Instead, you can wrap it using `new ArrayList<>(Arrays.asList(...))` or create an empty list and add the values one by one.
+6. Use a stream and lambda expression to check whether all values are dividable by 10 and print out the result.
 7. Add an odd number to the second list and repeat task 6.
 8. Create a new list of strings with the following values: "apple", "banana", "cherry", "date", "elderberry".
-9. Use a lambda expression to filter out all strings that start with the letter "c" from the list.
-10. Use a lambda expression to map each string in the list to its length.
+   * Use the `Arrays.asList(...)` method to create the list.
+9. Use a lambda expression to filter out all strings that start with the letter "c" from the list. Print the resulting list.
+10. Use a lambda expression to map each string in the filtered list to its length.
 11. Use a stream to print out the resulting list of string lengths.
 
 ## Exercise: Filtering and Mapping with Lambdas and Streams 2
