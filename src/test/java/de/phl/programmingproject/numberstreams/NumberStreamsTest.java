@@ -26,7 +26,7 @@ public class NumberStreamsTest {
     @Test
     void task_1_list_of_integers_created() {
         // 1. Create a list of integers with the following values: 2, 15, 24, 29, 36, 44, 52, 61, 68, 80.
-        Pattern pattern = Pattern.compile(".*List\\<Integer\\>.*\\=.*Arrays.asList\\(2.*15.*24.*29.*36.*44.*52.*61.*68.*80\\).*");
+        Pattern pattern = Pattern.compile("(?s).*List\\<Integer\\>.*\\=.*Arrays.asList\\(2.*15.*24.*29.*36.*44.*52.*61.*68.*80\\).*");
         for (String line : lines) {
             if (pattern.matcher(line).matches()) {
                 return;
@@ -38,7 +38,7 @@ public class NumberStreamsTest {
     @Test
     void task_2_filter_out_even_numbers() {
         // 2. Use a lambda expression to filter out all even numbers from the list.
-        Pattern pattern = Pattern.compile(".*\\.stream\\(\\).*filter\\(.*\\-\\>.*\\%.*2.*\\=\\=.*1.*\\).*");
+        Pattern pattern = Pattern.compile("(?s).*\\.stream\\(\\).*filter\\(.*\\-\\>.*\\%\\s*2\\s*(\\=\\=\\s*0|\\!\\=\\s*1).*\\).*");
         for (String line : lines) {
             if (pattern.matcher(line).matches()) {
                 return;
@@ -50,7 +50,7 @@ public class NumberStreamsTest {
     @Test
     void task_3_map_odd_numbers_to_square() {
         // 3. Use a lambda expression to map each odd number in the list to its square.
-        Pattern pattern = Pattern.compile(".*map\\(.*\\-\\>.*(\\b\\w+\\s*\\*\\s*\\w+\\b|Math.pow\\(.*,.*2.*\\)).*");
+        Pattern pattern = Pattern.compile("(?s).*map\\(.*\\-\\>.*(\\b\\w+\\s*\\*\\s*\\w+\\b|Math.pow\\(.*,.*2.*\\)).*");
         for (String line : lines) {
             if (pattern.matcher(line).matches()) {
                 return;

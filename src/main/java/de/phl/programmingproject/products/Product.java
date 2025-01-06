@@ -25,4 +25,13 @@ public class Product {
     public String getCategory() {
         return category;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }
