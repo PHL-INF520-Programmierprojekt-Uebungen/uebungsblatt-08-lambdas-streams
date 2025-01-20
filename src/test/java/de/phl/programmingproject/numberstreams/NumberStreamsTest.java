@@ -38,7 +38,7 @@ public class NumberStreamsTest {
     @Test
     void task_2_filter_out_even_numbers() {
         // 2. Use a lambda expression to filter out all even numbers from the list.
-        Pattern pattern = Pattern.compile("(?s).*\\.stream\\(\\).*filter\\(.*\\-\\>.*\\%\\s*2\\s*(\\=\\=\\s*0|\\!\\=\\s*1).*\\).*");
+        Pattern pattern = Pattern.compile("(?s).*\\.stream\\(\\).*filter\\(.*\\-\\>.*\\%\\s*2\\s*(\\=\\=\\s*1|\\!\\=\\s*0).*\\).*");
         if (!pattern.matcher(mainMethodContent).find())
             fail("The main method does not contain a stream that filters out all even numbers from the list. Make sure to use the 'filter(...)' method.");
     }
