@@ -1,6 +1,10 @@
 # Übungsblatt: Lambdas und Java Streams API
 [Link to English version](./README_en.md)
 
+[![In GitHub Codespaces öffnen](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new)
+
+**Im Browser arbeiten:** Wählen Sie nach dem Klick unter **Repository** Ihr eigenes Repository aus (der Name endet auf Ihren GitHub-Benutzernamen), nicht die Vorlage. Alternativ öffnen Sie Ihr Repository auf GitHub und wählen **Code → Codespaces → Create codespace on main**. Wie Sie lokal arbeiten und die Tests starten, steht in [TESTEN.md](./TESTEN.md).
+
 In diesem Übungsblatt lernen Sie, Lambdas und die Java Streams API zu verwenden, um verschiedene Aufgaben zu lösen.
 
 ## Übung: Filtern und Abbilden (`Map`) mit Lambdas und Streams 1 (`NumberStreams`)
